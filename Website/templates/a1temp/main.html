@@ -1,0 +1,548 @@
+
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>A1 cricket</title>
+	<!-- Meta Tags -->
+	
+	<script type="application/x-javascript">
+		addEventListener("load", function () {
+			setTimeout(hideURLbar, 0);
+		}, false);
+
+		function hideURLbar() {
+			window.scrollTo(0, 1);
+		}
+	</script>
+	<!-- //Meta Tags -->
+	<!-- Style Sheets -->
+
+
+
+	<link href="{% static 'css/bootstrap.css' %}" rel="stylesheet" type="text/css" media="all" />
+	<!--// Bootstrap-CSS -->
+	<link href="{% static 'css/font-awesome.css' %}" rel="stylesheet">
+	<!--// Font-Awesome-CSS -->
+	<link rel="stylesheet" href="{% static 'css/owl.carousel.css' %}" type="text/css" media="all" />
+	<link rel="stylesheet" href="{% static 'css/flexslider.css' %}" type="text/css" media="screen" property="" />
+	<!--// Owl-Carousel-CSS -->
+	<link href="{% static 'css/style.css' %}" rel="stylesheet" type="text/css" media="all" />
+	<!--// Owl-Carousel-CSS -->
+
+
+    <!--<link href="css/style.css" rel="stylesheet" type="text/css" media="all" /> -->
+
+
+	<!-- //Style Sheets -->
+	<!-- web-fonts -->
+	<link href="//fonts.googleapis.com/css?family=Khula:300,400,600,700,800" rel="stylesheet" />
+	<link href="//fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,400,400i,500,500i,600,600i,700,700i,800" rel="stylesheet" />
+	<!--// web-fonts -->
+
+	<style>
+	.col-container {
+		display: table; /* Make the container element behave like a table */
+		width: 100%; /* Set full-width to expand the whole page */
+	}
+
+	.xyz{
+  		display: block;
+	}
+
+	.col {
+		display: table-cell; /* Make elements inside the container behave like table cells */
+	}
+	</style>
+</head>
+
+<body>
+	<!-- banner -->
+	<div class="banner jarallax" id="home">
+		<header>
+			<div class="container">
+				<div class="header-bottom-agileits">
+					<div class="w3-logo">
+						<h1><a href="{% url 'main2' %}">A1 Cricket    </a></h1>
+					</div>
+					<div class="address">
+						<p>Gaddafi Stadium, Gulberg III, Lahore</p>
+						<p class="para-y"><a href="{% url 'about' %}">Get more info</a></p>
+					</div>
+					<div class="nav-contact-w3ls">
+						<p>+98 333 3333333<span class="fa fa-phone" aria-hidden="true"></span></p>
+						<p class="para-y"><a href="">inquiry@A1.com.pk</a><span class="fa fa-envelope-o" aria-hidden="true"></span></p>
+                       
+                                            </div>
+					<div class="clearfix"></div>
+				</div>
+			</div>
+		</header>
+		<!-- navigation -->
+		<div class="nav-bg">
+			
+			<div class="container">
+			
+				<nav class="navbar navbar-default shift">
+				
+					 <!-- Brand and toggle get grouped for better mobile display -->
+					<div class="navbar-header">
+					
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+						    aria-expanded="false">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					  </button>
+
+				  </div>
+
+					<!-- Collect the nav links, forms, and other content for toggling -->
+					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+						<ul class="nav navbar-nav">
+							<li><a class="active" href="{% url 'main2' %}">Home</a></li>
+							<li><a href="{% url 'about' %}">About</a></li>
+							<li><a href='#serve'>Predictions</a></li>
+							<!--<li class="dropdown">
+									<a href="#" class="dropdown-toggle effect-3" data-toggle="dropdown">Pages<b class="caret"></b></a>
+									
+								</li>-->
+							
+							
+						</ul>
+
+					</div>
+					<!-- /.navbar-collapse -->
+
+				</nav>
+			</div>
+		</div>
+	<!-- //navigation -->
+		<div class="container">
+			<!-- header -->
+			<!-- //header -->
+			<div class="agileits_w3layouts_banner_info">
+				<section class="slider">
+						<div class="flexslider">
+							<ul class="slides">
+								<li>
+									<div class="banner-text-w3-agileits">
+										<h5>international 2020 </h5>
+										<h2>Enjoy Prediction Services</h2>
+										<p>based on machine learning and AI.</p>
+										<div class="botton">
+											<a href='#serve'>Start Predicting Now</a>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="banner-text-w3-agileits">
+										<h5>The best and fastest service</h5>
+										<h2>Are You Excited to Cheer Your Team?</h2>
+										<p>Predict if your team will win today!</p>
+										<div class="botton">
+											<a href='#serve'>Start Predicting Now</a>
+										</div>
+									</div>
+								</li>
+								<li>
+									<div class="banner-text-w3-agileits">
+										<h5>Using State of Art Algorithms </h5>
+										<h2>Know the score and result before the starting of the match</h2>
+										<p>Make near-accurate predictions of your favourite team's performance</p>
+										<div class="botton">
+											<a href='#serve'>Start Predicting Now</a>
+										</div>
+									</div>
+								</li>
+							</ul>
+						</div>
+				</section>
+			</div>
+		</div>
+	</div>
+	<!-- //banner -->
+
+
+	
+	
+	<!-- Latest News -->
+	<div class="practice-areas">
+		<div class="container">
+			<div class="wthree_head_section">
+				<a id='serve'><h3 class="w3l_header">Our <span>PREDICTIONS</span></h3>
+				<p>We are here for computing all sorts of results that you want to predict before and during the match</p>
+			</div>
+
+
+
+	<div class="container">
+	  <div class="col area-right p1">
+		  <a class ="xyz" href={% url 'prematch' %}><h5>SCORE PREDICTION</h5></a>
+	  	<p class="para-w3-agile">Use our very advanced Machine Learning Technology
+	  		 to predict how much the batting team will score at the end of their innings given a few details of the
+	  		 match's current scenario.</p>>
+	  </div>
+
+	  <div class="col area-right p2">
+		  <a class ="xyz" href={% url 'first_inn' %}><h5>WIN PREDICTION</h5></a>
+	  	<p class="para-w3-agile">Dive into the future with our enhanced Machine Learning and Artificial
+			Intelligence Technology to predict the outcome of the match of your favourite teams even before its toss!</p>
+	  </div>
+
+	 <div class="col area-right p3">
+		   <a class ="xyz" href={% url 'second_inn' %}><h5>WICKET PREDICTION</h5></a>
+	  	<p class="para-w3-agile">Dive into the future with our enhanced Machine Learning and Artificial
+			Intelligence Technology to predict the number of wickets in a match.</p>
+	  </div>
+
+	 
+	</div>
+	</div> </div>
+
+
+
+
+	<!-- //Latest News -->
+	<!-- wthree-mid -->
+	<div class="wthree-mid jarallax">
+		<div class="container">
+			<h3>International Cricket Council</h3>
+			<p>International Cricket Council is one of the most anticipated brand</p>
+			<div class="botton">
+				<a href="https://www.icc-cricket.com" target="_blank">Visit ICC's Ofiicial Website</a>
+			</div>
+		</div>
+	</div>
+<!-- //wthree-mid -->
+	<!-- pricing -->
+	<div class="w3ls-section wthree-pricing" id="pricing">
+		<div class="container">
+			<div class="wthree_head_section">
+				<h3 class="w3l_header">international<span>Battlefield</span></h3>
+				<p>international is like a battlefield where each  team represent their country and will try to 
+				claim their victory. Here, we here list the eight teams</p>
+			</div>
+			<div class="pricing-grids-info">
+
+								<div class="pricing-grid grid-one">
+									<div class="w3ls-top">
+										<h3>Pakistan</h3>
+									</div>
+									<div class="w3ls-bottom">
+										
+										<!-- <h4> 350<span class="sup">$</span> </h4> -->
+										<div class="more">
+											<a href="https://www.pcb.com.pk" target="_blank">View Website</a>
+										</div>
+									</div>
+								</div>
+
+
+								<div class="pricing-grid grid-two">
+									<div class="w3ls-top">
+										<h3>Australia </h3>
+									</div>
+									<div class="w3ls-bottom">
+										
+										<!-- <h4> 500<span class="sup">$</span> </h4> -->
+										<div class="more">
+											<a href="https://www.cricket.com.au" target="_blank">View Website</a>
+										</div>
+									</div>
+								</div>
+
+
+
+								<div class="zb pricing-grid grid-three">
+									<div class="w3ls-top">
+										<h3>England</h3>
+									</div>
+									<div class="w3ls-bottom">
+										
+										<!-- <h4> 800<span class="sup">$</span> </h4> -->
+										<div class="more">
+											<a href="https://www.ecb.co.uk" target="_blank">View Website</a>
+										</div>
+									</div>
+								</div>
+
+
+
+								<div class="zb pricing-grid grid-four">
+									<div class="w3ls-top">
+										<h3>South Africa</h3>
+									</div>
+									<div class="w3ls-bottom">
+										
+										<!-- <h4> 800<span class="sup">$</span> </h4> -->
+										<div class="more">
+											<a href="http://cricket.co.za" target="_blank">View Website</a>
+										</div>
+									</div>
+								</div>
+								<div class="clearfix"> </div>
+				<!--End-slider-script-->
+			</div>
+		</div>
+	</div>
+
+
+
+	<div class="w3ls-section wthree-pricing" id="pricing">
+		<div class="container">
+			<div class="pricing-grids-info">
+
+
+				<div class="pricing-grid grid-one">
+					<div class="w3ls-top">
+						<h3>Srilanka</h3>
+					</div>
+					<div class="w3ls-bottom">
+						
+						<!-- <h4> 200<span class="sup">$</span> </h4> -->
+						<div class="more">
+							<a href="http://cricket.lk/?__cf_chl_jschl_tk__=e1ea1d52127932450dc679aa5c9ab994f3185715-1584849909-0-AUa4KACGDl6bej2eVD87su5yUkceoWWAZU3DeMrZMDa5_FoC039UaGp2KPLeet7kvQvphGkLllGhKIoV_usDNIdDoTBg2ug3hOhHqEHivxcZF__ivBStii2_NDq8X9IkdmJfAd98vY9tSLeau4NWe96_KJWD7mQpFHWkjuGFHVnoEfLsG0f7M0jzlzeSFMAt0MgYPTmP7maf4s5UwmUqxMxHbKrMWvg5THcgt7vkJw2LQU-uPO79IcT0NejqMR63U-fP8Pj0WJ3Jqe9C1hVri3o" target="_blank">View Website</a>
+						</div>
+					</div>
+				</div>
+
+
+
+
+								<div class="pricing-grid grid-two">
+									<div class="w3ls-top">
+										<h3>West indies</h3>
+									</div>
+									<div class="w3ls-bottom">
+										
+										<!-- <h4> 200<span class="sup">$</span> </h4> -->
+										<div class="more">
+											<a href="https://www.windiescricket.com" target="_blank">View Website</a>
+										</div>
+									</div>
+								</div>
+								<div class="pricing-grid grid-three">
+									<div class="w3ls-top">
+										<h3>Bangladesh</h3>
+									</div>
+									<div class="w3ls-bottom">
+										
+										<!-- <h4> 350<span class="sup">$</span> </h4> -->
+										<div class="more">
+											<a href="http://www.tigercricket.com.bd" target="_blank">View Website</a>
+										</div>
+									</div>
+								</div>
+
+
+
+								<div class="pricing-grid grid-four">
+									<div class="w3ls-top">
+										<h3>India</h3>
+									</div>
+									<div class="w3ls-bottom">
+										
+										<!-- <h4> 500<span class="sup">$</span> </h4> -->
+										<div class="more">
+											<a href="https://www.bcci.tv" target="_blank">View Website</a>
+										</div>
+									</div>
+								</div>
+
+
+
+
+
+
+
+								<div class="clearfix"> </div>
+				<!--End-slider-script-->
+			</div>
+		</div>
+	</div>
+	<!--//pricing-->
+<!-- counter -->
+	<div class="services-bottom stats services jarallax">
+	<div class="banner-dott1">
+		<div class="container">
+		<div class="wthree_head_section">
+				<h3 class="w3l_header two">international <span>Statistics</span></h3>
+				<p class="tho">International Cricket Council is one of the most anticipated brand</p>
+			</div>
+		  <div class="wthree-agile-counter">
+		  <div class="col-md-3 w3_agile_stats_grid-top">
+			<div class="w3_agile_stats_grid">
+				<div class="agile_count_grid_left">
+				<span class="glyphicon glyphicon-cog" aria-hidden="true"></span>
+				</div>
+				<div class="agile_count_grid_right">
+					<p class="counter">5164</p>
+				</div>
+				<div class="clearfix"> </div>
+				<h4>Sixes</h4>
+			</div>
+		</div>
+		<div class="col-md-3 w3_agile_stats_grid-top">
+			<div class="w3_agile_stats_grid">
+				<div class="agile_count_grid_left">
+					<span class="glyphicon glyphicon-user" aria-hidden="true"></span>
+				</div>
+				<div class="agile_count_grid_right">
+					<p class="counter">263</p>
+				</div>
+				<div class="clearfix"> </div>
+				<h4>Highest Team Total</h4>
+			</div>
+		</div>
+		<div class="col-md-3 w3_agile_stats_grid-top">
+			<div class="w3_agile_stats_grid">
+				<div class="agile_count_grid_left">
+					<span class="glyphicon glyphicon-thumbs-up" aria-hidden="true"></span>
+				</div>
+				<div class="agile_count_grid_right">
+					<p class="counter">36</p>
+				</div>
+				<div class="clearfix"> </div>
+				<h4>Most Expensive Over</h4>
+			</div>
+		</div>
+		<div class="col-md-3 w3_agile_stats_grid-top">
+			<div class="w3_agile_stats_grid">
+				<div class="agile_count_grid_left">
+					<span class="fa fa-trophy" aria-hidden="true"></span>
+				</div>
+				<div class="agile_count_grid_right">
+					<p class="counter">154</p>
+				</div>
+				<div class="clearfix"> </div>
+				<h4>Maximum Individual Wickets Taken</h4>
+			</div>
+		</div>
+			<div class="clearfix"> </div>
+		</div>
+	</div>
+	</div>
+</div>
+<!-- //counter -->
+	<!-- Clients -->
+
+	<!--// Clients -->
+	<!-- footer -->
+	<div class="footer">
+	<div class="container">
+		<div class="f-bg-w3l">
+		<div class="col-md-4 w3layouts_footer_grid">
+					
+
+					
+				</div>
+				<div class="col-md-4 w3layouts_footer_grid">
+					<h2>Social <span>Media</span></h2>
+				
+					<ul class="social_agileinfo">
+						<li><a href="" class="w3_facebook"><i class="fa fa-facebook"></i></a></li>
+						<li><a href="" class="w3_twitter"><i class="fa fa-twitter"></i></a></li>
+						<li><a href="" class="w3_instagram"><i class="fa fa-instagram"></i></a></li>
+						<li><a href="" class="w3_google"><i class="fa fa-google-plus"></i></a></li>
+					</ul>
+				</div>
+				<div class="col-md-4 w3layouts_footer_grid">
+					
+
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+			</div>
+			
+	</div>
+	<!-- //footer -->
+
+	<a href="#home" class="scroll" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+	<!-- //smooth scrolling -->
+	<script type='text/javascript' src="{% static 'js/jquery-2.2.3.min.js' %}"></script>
+	<!-- start-smoth-scrolling -->
+	<script src="{% static 'js/jarallax.js' %}"></script>
+	<script type="text/javascript">
+		/* init Jarallax */
+		$('.jarallax').jarallax({
+			speed: 0.5,
+			imgWidth: 1366,
+			imgHeight: 768
+		})
+	</script>
+	<!-- flexSlider -->
+				<script defer src="{% static 'js/jquery.flexslider.js' %}"></script>
+				<script type="text/javascript">
+					$(window).load(function(){
+					  $('.flexslider').flexslider({
+						animation: "slide",
+						start: function(slider){
+						  $('body').removeClass('loading');
+						}
+					  });
+					});
+				</script>
+<!-- //flexSlider -->
+
+	<!-- Owl-Carousel-JavaScript -->
+	<script src="{% static 'js/owl.carousel.js' %}"></script>
+	<script>
+		$(document).ready(function () {
+			$("#owl-demo").owlCarousel({
+				items: 2,
+				lazyLoad: true,
+				autoPlay: false,
+				pagination: true,
+			});
+		});
+	</script>
+	<!-- //Owl-Carousel-JavaScript -->
+	<script type="text/javascript" src="{% static 'js/move-top.js' %}"></script>
+	<script type="text/javascript" src="{% static 'js/easing.js' %}"></script>
+	<script type="text/javascript">
+		jQuery(document).ready(function ($) {
+			$(".scroll").click(function (event) {
+				event.preventDefault();
+				$('html,body').animate({
+					scrollTop: $(this.hash).offset().top
+				}, 1000);
+			});
+		});
+	</script>
+	<!-- start-smoth-scrolling -->
+	<!-- here stars scrolling icon -->
+	<script type="text/javascript">
+		$(document).ready(function () {
+			/*
+				var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear'
+				};
+			*/
+
+			$().UItoTop({
+				easingType: 'easeOutQuart'
+			});
+
+		});
+	</script>
+	<!-- //here ends scrolling icon -->
+
+	<!-- stats -->
+	<script src="{% static 'js/jquery.waypoints.min.js' %}"></script>
+	<script src="{% static 'js/jquery.countup.js' %}"></script>
+		<script>
+			$('.counter').countUp();
+		</script>
+<!-- //stats -->
+
+	<!--js for bootstrap working-->
+	<script src="{% static 'js/bootstrap.js' %}"></script>
+	<!-- //for bootstrap working -->
+</body>
+</html>

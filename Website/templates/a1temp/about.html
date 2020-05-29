@@ -1,0 +1,251 @@
+
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>A1 Cricket</title>
+	
+	<script type="application/x-javascript">
+		addEventListener("load", function () {
+			setTimeout(hideURLbar, 0);
+		}, false);
+
+		function hideURLbar() {
+			window.scrollTo(0, 1);
+		}
+	</script>
+	<!-- //Meta Tags -->
+	<!-- Style Sheets -->
+	<link href="{% static 'css/bootstrap.css' %}" rel="stylesheet" type="text/css" media="all" />
+	<!--// Bootstrap-CSS -->
+	<link href="{% static 'css/font-awesome.css' %}" rel="stylesheet">
+	<!--// Font-Awesome-CSS -->
+	<link href="{% static 'css/style.css' %}" rel="stylesheet" type="text/css" media="all" />
+	<!-- //Style Sheets -->
+	<!-- web-fonts -->
+	<link href="//fonts.googleapis.com/css?family=Khula:300,400,600,700,800" rel="stylesheet">
+	<link href="//fonts.googleapis.com/css?family=Montserrat:100,100i,200,200i,300,400,400i,500,500i,600,600i,700,700i,800" rel="stylesheet">
+	<!--// web-fonts -->
+</head>
+
+<body>
+	<!-- banner -->
+	<div class="banner-1 jarallax" id="home">
+		<header>
+			<div class="container">
+				<div class="header-bottom-agileits">
+					<div class="w3-logo">
+						<h1><a href="{% url 'main2' %}">A1 Cricket  </a></h1>
+					</div>
+					<div class="address">
+						<p>Gaddafi Stadium, Gulberg III, Lahore</p>
+						<p class="para-y"><a href="{% url 'about' %}">Get more info</a></p>
+					</div>
+					<div class="nav-contact-w3ls">
+						<p>+98 333 3333333<span class="fa fa-phone" aria-hidden="true"></span></p>
+						<p class="para-y"><a href="">inquiry@A1.com.pk</a><span class="fa fa-envelope-o" aria-hidden="true"></span></p>
+					</div>
+					<div class="clearfix"></div>
+				</div>
+			</div>
+		</header>
+		<!-- navigation -->
+	<div class="nav-bg">
+		<div class="container">
+			<nav class="navbar navbar-default shift">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"
+					    aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				  </button>
+
+				</div>
+
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav">
+						<li><a href="{% url 'main2' %}">Home</a></li>
+						<li><a class="active" href="{% url 'about' %}">About</a></li>
+						<li><a href="{% url 'mainpred' %}">Predictions</a></li>
+					<!--	<li class="dropdown">
+								<a href="#" class="dropdown-toggle effect-3" data-toggle="dropdown">Pages<b class="caret"></b></a>
+								
+							</li> -->
+						
+						
+					</ul>
+
+				</div>
+				<!-- /.navbar-collapse -->
+
+			</nav>
+		</div>
+	</div>
+	<!-- //navigation -->
+	</div>
+	<!-- //banner -->
+	<!-- about -->
+<div class="about">
+	<div class="container">
+	<div class="wthree_head_section">
+				<h3 class="w3l_header">About <span>Us</span></h3>
+				<p>This web-app is created as Our fyp project.
+<br><br>
+In this project we have use various algorithms like Naive Bayes, SVM, Random Forest in training our various machine learning models. And on different stages of training and testng, final model works and best fit with random forest algorithm.
+<br><br>
+We have used dataset from Cricsheet website and then modified the csv files  in order to train and for working of our different models.In addition, We have use varoius python libraries such as scikit learn, numpy, pandas,etc in order to code our models.</p>
+			</div>
+		<!-- <div class="ab-agile">
+			
+				
+			
+			<div class="clearfix"></div>
+		</div>
+		
+	</div> -->
+</div>
+<!-- //about -->
+<!-- wthree-mid -->
+	<div class="wthree-mid jarallax">
+		<div class="container">
+			<h3>A1 Cricket - international match </h3>
+			
+		</div>
+	</div>
+<!-- //wthree-mid -->
+
+<!-- Team section -->
+<section class="team" >
+	<div class="container">
+		<div class="wthree_head_section">
+				<h3 class="w3l_header">Contact  <span>Us</span></h3>
+				<p>We made many sincere efforts for completion of the project</p>
+			</div>
+		<div class="team-grid-top">
+		<div class="col-md-4 team1">
+				<div class="inner-team1">
+				
+				<h3>Ahsan Ali</h3>
+				
+					<div class="team-social">
+						<a href="https://www.facebook.com/ahsan.ali.eng"><i class="fa fa-facebook"></i></a>
+					</div>
+				</div>
+			</div>
+			<div class="col-md-4 team1">
+				<div class="inner-team1">
+				
+				<h3>Muhammad Shahzad Rafiq</h3>
+				
+					<div class="team-social">
+						<a href="https://www.facebook.com/shahzad.junejo2"><i class="fa fa-facebook"></i></a>
+						
+					</div>
+				</div>
+			</div>
+			
+			
+			
+			
+			<div class="clearfix"></div>
+		</div>
+		<div class="clearfix"></div>
+
+	</div>
+</section>
+
+
+
+
+
+
+
+
+
+	
+	<!-- footer -->
+	<div class="footer">
+	<div class="container">
+		<div class="f-bg-w3l">
+			<div class="col-md-4 w3layouts_footer_grid">
+						
+						
+					</div>
+				<div class="col-md-4 w3layouts_footer_grid">
+					<h2>Social <span>Media</span></h2>
+					<ul class="social_agileinfo">
+							<li><a href="" class="w3_facebook"><i class="fa fa-facebook"></i></a></li>
+							<li><a href="" class="w3_twitter"><i class="fa fa-twitter"></i></a></li>
+							<li><a href="" class="w3_instagram"><i class="fa fa-instagram"></i></a></li>
+							<li><a href="" class="w3_google"><i class="fa fa-google-plus"></i></a></li>
+						</ul>
+				</div>
+				<div class="col-md-4 w3layouts_footer_grid">
+					
+
+				</div>
+				<div class="clearfix"> </div>
+			</div>
+			</div>
+			
+	</div>
+	<!-- //footer -->
+
+	<a href="#home" class="scroll" id="toTop" style="display: block;"> <span id="toTopHover" style="opacity: 1;"> </span></a>
+	<!-- //smooth scrolling -->
+	<script type='text/javascript' src="{% static 'js/jquery-2.2.3.min.js' %}"></script>
+	<!-- start-smoth-scrolling -->
+	<script src="{% static 'js/jarallax.js' %}"></script>
+	<script type="text/javascript">
+		/* init Jarallax */
+		$('.jarallax').jarallax({
+			speed: 0.5,
+			imgWidth: 1366,
+			imgHeight: 768
+		})
+	</script>
+	<!-- //Owl-Carousel-JavaScript -->
+	<script type="text/javascript" src="{% static 'js/move-top.js' %}"></script>
+	<script type="text/javascript" src="{% static 'js/easing.js' %}"></script>
+	<script type="text/javascript">
+		jQuery(document).ready(function ($) {
+			$(".scroll").click(function (event) {
+				event.preventDefault();
+				$('html,body').animate({
+					scrollTop: $(this.hash).offset().top
+				}, 1000);
+			});
+		});
+	</script>
+	<!-- start-smoth-scrolling -->
+	<!-- here stars scrolling icon -->
+	<script type="text/javascript">
+		$(document).ready(function () {
+			/*
+				var defaults = {
+				containerID: 'toTop', // fading element id
+				containerHoverID: 'toTopHover', // fading element hover id
+				scrollSpeed: 1200,
+				easingType: 'linear'
+				};
+			*/
+
+			$().UItoTop({
+				easingType: 'easeOutQuart'
+			});
+
+		});
+	</script>
+	<!-- //here ends scrolling icon -->
+
+
+	<!--js for bootstrap working-->
+	<script src="{% static 'js/bootstrap.js' %}"></script>
+	<!-- //for bootstrap working -->
+</body>
+</html>
